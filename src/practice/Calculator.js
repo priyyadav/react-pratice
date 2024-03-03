@@ -11,6 +11,7 @@ export const Calculator = () => {
   const clearHandler = () => {
     setDisplay(' ');
     setcount(' ');
+    setvalue(' ')
   };
 
   const deleteHandler = () => {
@@ -25,6 +26,7 @@ export const Calculator = () => {
     if(display.includes('**') || display.includes('^2'))
     {
     lastChar=display.slice(-2);
+    console.log("ki",lastChar)
     setfrst(true);
     setsqrt(true)
     }
@@ -42,21 +44,33 @@ export const Calculator = () => {
     
     else if (isNaN(value) && !isNaN(lastChar))
     {
-      console.log("value are number nad last are charte")
-      setDisplay((prevDisplay) => prevDisplay+ value);
+      console.log("value are char nad last are numer")
+
+ setDisplay((prevDisplay) => prevDisplay+ value);
       setcount((prevDisplay) => prevDisplay+ value);
+
+     
     }
     else if (!isNaN(value) && isNaN(lastChar))
     {
-      setDisplay((prevDisplay) => prevDisplay+ value);
-      setcount((prevDisplay) => prevDisplay+ value); 
+      console.log("value are number nad last are charte")
+      if(lastChar.includes('^2') )
+      {
+        setDisplay((prevDisplay) => prevDisplay);
+        setcount((prevDisplay) => prevDisplay); 
+      }
+      else{
+     
+        setDisplay((prevDisplay) => prevDisplay+ value);
+        setcount((prevDisplay) => prevDisplay+ value); 
+      }
     }
     else if (isNaN(value) && isNaN(lastChar))
     {
-      console.log(display,"k")
+      
       console.log("value are char nad last are charte")
       setDisplay((prevDisplay) => prevDisplay.replace(lastChar,value));
-      setcount((prevDisplay) => prevDisplay.replace(lastChar,value)); 
+      setcount((prevcount) => prevcount.replace(lastChar,value)); 
     }
 
     }

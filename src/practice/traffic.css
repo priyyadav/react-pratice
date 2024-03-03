@@ -1,0 +1,16 @@
+.main
+{
+    width: 200px;
+    height: 530px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+.box
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 10px auto
+}

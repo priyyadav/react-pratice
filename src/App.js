@@ -3,6 +3,8 @@ import './App.css';
 import { Counter } from './practice/counter';
 import { List } from './practice/list';
 import { Calculator } from './practice/Calculator';
+import { Color } from './practice/color';
+import { Traffic } from './practice/traffic';
 function App() {
   return (
     <div>
@@ -10,7 +12,9 @@ function App() {
    <h2>h2</h2>
    {/* <Counter></Counter> */}
    {/* <List></List> */}
-   <Calculator></Calculator>
+   {/* <Calculator></Calculator> */}
+   {/* <Color></Color> */}
+   <Traffic></Traffic>
     </div>
 
   );

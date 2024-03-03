@@ -7,6 +7,7 @@ import { Color } from './practice/color';
 import { Traffic } from './practice/traffic';
 import { Templates } from './practice/templates';
 import { Popup } from './practice/popup';
+import { Model } from './practice/model';
 function App() {
   return (
     <div>
@@ -18,7 +19,8 @@ function App() {
    {/* <Color></Color> */}
    {/* <Traffic></Traffic> */}
    {/* <Templates></Templates> */}
-   <Popup></Popup>
+   {/* <Popup></Popup> */}
+   <Model></Model>
     </div>
 
   );

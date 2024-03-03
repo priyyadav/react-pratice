@@ -5,6 +5,7 @@ import { List } from './practice/list';
 import { Calculator } from './practice/Calculator';
 import { Color } from './practice/color';
 import { Traffic } from './practice/traffic';
+import { Templates } from './practice/templates';
 function App() {
   return (
     <div>
@@ -14,7 +15,8 @@ function App() {
    {/* <List></List> */}
    {/* <Calculator></Calculator> */}
    {/* <Color></Color> */}
-   <Traffic></Traffic>
+   {/* <Traffic></Traffic> */}
+   <Templates></Templates>
     </div>
 
   );

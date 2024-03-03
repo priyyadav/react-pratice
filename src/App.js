@@ -2,13 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import { Counter } from './practice/counter';
 import { List } from './practice/list';
+import { Calculator } from './practice/Calculator';
 function App() {
   return (
     <div>
    <h1>hello react</h1>
    <h2>h2</h2>
-   <Counter></Counter>
-   <List></List>
+   {/* <Counter></Counter> */}
+   {/* <List></List> */}
+   <Calculator></Calculator>
     </div>
 
   );

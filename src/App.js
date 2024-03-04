@@ -8,6 +8,7 @@ import { Traffic } from './practice/traffic';
 import { Templates } from './practice/templates';
 import { Popup } from './practice/popup';
 import { Model } from './practice/model';
+import { Password } from './practice/password';
 function App() {
   return (
     <div>
@@ -20,7 +21,8 @@ function App() {
    {/* <Traffic></Traffic> */}
    {/* <Templates></Templates> */}
    {/* <Popup></Popup> */}
-   <Model></Model>
+   {/* <Model></Model> */}
+   <Password></Password>
     </div>
 
   );
